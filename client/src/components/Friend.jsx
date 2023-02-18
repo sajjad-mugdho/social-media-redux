@@ -24,7 +24,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
     const patchFriend = async () => {
         const response = await fetch(
-            `http://localhost:3001/users/${_id}/${friendId}`,
+            `https://facemimu2-sajjad-mugdho.vercel.app/users/${_id}/${friendId}`,
             {
                 method: "PATCH",
                 headers: {
