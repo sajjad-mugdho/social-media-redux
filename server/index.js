@@ -59,7 +59,9 @@ app.use("/posts", postsRoutes);
 */
 
 const PORT = process.env.PORT || 5001
-
+app.get('/', async (req, res) => {
+    res.send('FaceMIMU is Running')
+})
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
